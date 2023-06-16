@@ -1,0 +1,95 @@
+*{
+    
+    font-family: 'Open Sans', sans-serif;
+
+    align-items: center;
+    text-align: center;
+}
+
+
+body{
+    background-color: gray;
+}
+
+#contenedorCarga{
+    background-color: rgba(237, 227, 220, 0.912);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+#cargar{
+    border: 15px solid #ccccccb1;
+    border-top-color: #3b26f4;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#divColumnas,p,#btnAgregar{
+    margin: 5px;
+}
+
+#mostrarCol{
+    margin-top: 20px;
+}
+
+table,th,td{
+    border: 2px solid rgb(25, 0, 107);
+    border-collapse: collapse;
+    padding: 2px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lstTipo,#inputEdadPromedio,#btnEdadPromedio,#btnAgregar,#btnAlta,#btnModificar,#btnEliminar,#btnCancelar,#lstTipoABM{
+    height: 35px;
+}
+
+#inputEdadPromedio{
+    height: 30px;
+}
+
+.tHead{
+    cursor: default;
+    background-color: white;
+}
+
+.tBody{
+    cursor: default;
+    background-color: lightskyblue;
+}
+
+input{
+    cursor: pointer;
+}
+
+tr:hover td{
+    background-color: LightCyan;
+}
+
+
